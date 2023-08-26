@@ -1,0 +1,423 @@
+:root{
+    --dark-color:#212529;
+    --light-color:#dfd5d5;
+    --icon-color:#f4f4f4;
+}
+/* ALL */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+  .up {
+    position: fixed;
+    bottom: 20px;
+    right: -40px;
+    background-color: var(--dark-color);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .up.show {
+    right: 40px;
+  }
+
+
+/* Header*/
+header{
+    background-image: url(./material/bg2.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.logo {
+    padding: 10px 10%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.logo a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 10%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul a{
+    color: var(--dark-color);
+    font-size:20px;
+    text-decoration: none;
+}
+
+
+/* HOME */
+
+.home .layer{
+background-color: rgba(0, 0, 0, 0.6);
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+height: 90vh;
+
+
+}
+.home .layer .content h3{
+    font-size: 2.5rem;
+    font-weight: 600; 
+    color: var(--light-color);
+}
+.home .layer .content h1{
+    color: var(--light-color);
+    font-size: 3rem;
+    font-weight: 200;
+}
+.home .layer .content h1::after {
+    content: " |";
+    animation-name: moveLetters;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    font-weight: 500;
+}
+@keyframes moveLetters {
+    0% {content: "A |";}
+    1% {content: "Am |";}
+    2% {content: "Ama |";}
+    3% {content: "Aman |";}
+    4% {content: "Amany |";}
+    5% {content: "Amany E |";}
+    6% {content: "Amany El |";}
+    7% {content: "Amany Elf |";}
+    8% {content: "Amany Elfa |";}
+    9% {content: "Amany Elfaw |";}
+    10% {content: "Amany Elfawe |";}
+    11% {content: "Amany Elfawey |";}
+    
+    12% {content: "Amany Elfawe |";}
+    13% {content: "Amany Elfaw |";}
+    14% {content: "Amany Elfa |";}
+    15% {content: "Amany Elf |";}
+    16% {content: "Amany El |";}
+    17% {content: "Amany E |";}
+    18% {content: "Aman |";}
+    19% {content: "Ama |";}
+    20% {content: "AM|";}
+    21% {content: "A|";}
+
+    22% {content: "F |";}
+    23% {content: "Fr |";}
+    24% {content: "Fro |";}
+    25% {content: "Fron |";}
+    26% {content: "Front |";}
+    27% {content: "Fronte |";}
+    28% {content: "Fronten |";}
+    29% {content: "Frontend |";}
+
+    30% {content: "Frontend D |";}
+    31% {content: "Frontend De |";}
+    32%  {content: "Frontend Dev |";}
+    33% {content: "Frontend Deve |";}
+    34% {content: "Frontend Devel |";}
+    35% {content: "Frontend Develo |";}
+    36% {content: "Frontend Develop |";}
+    37% {content: "Frontend Develope |";}
+    38% {content: "Frontend Developer |";}
+}
+
+.home .icons{
+    padding: 20px;
+    font-size: 30px;
+}
+.home .icons a{
+    color: var(--light-color);
+}
+.home .icons .fa-brands{
+    padding: 10px;
+}
+
+/* About Me */
+.container{
+    display: flex;
+    margin: 0 100px;
+    padding: 25px 0;
+}
+
+.about .content {
+ font-weight: light;
+ color: #212529;
+ padding: 50px;
+}
+.about .content span{
+    font-weight: bold;
+}
+.about .content h3{
+    color: var(--dark-color);
+    font-size: 30px;
+    padding: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.about .content .buttons{
+    padding:50px 10px;
+
+
+}
+.about .content p{
+    padding:10px;
+    font-size: 18px;
+}
+.about .content .btn1{
+font-size: 16px;
+border: 1px solid var(--dark-color);
+color: white;
+background-color: var(--dark-color);
+height: 50px;
+width: 150px;
+border-radius: 10px;
+
+
+
+}
+.about .content .btn1:hover,
+.about .content .btn1:focus{
+    background-color: white;
+    color: black;
+    border: 1px solid var(--dark-color);
+    transition-duration: 0.5s;
+
+}
+
+.about .content .btn2{
+    font-size: 16px;
+    border: 1px solid var(--dark-color);
+    border-radius: 10px;
+    color: var(--dark-color);
+    background-color: transparent;
+    height: 50px;
+    width: 150px;
+    }
+.about .content .btn2:hover,
+.about .content .btn2:focus{
+    font-size: 16px;
+    border: 1px solid var(--dark-color);
+    color: white;
+    background-color: var(--dark-color);
+    transition-duration: 0.5s;
+    }
+
+/* START PORTFOLIO */
+.portfolio{
+    background-color: var(--icon-color);
+}
+.portfolio h3 {
+
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+.portfolio .main-title{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.portfolio .main-title h3:after {
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(./material/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.portfolio .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio .img{ 
+    width: 500px;
+    height: 300px;
+    
+}
+.portfolio .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color:var(--light-color);
+    opacity: 0.8;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:var(--dark-color);
+    transition: all 0.5s;
+    font-size: 0.5rem;
+    transform: translateY(calc(-100% - 5px));
+}
+.portfolio .box:hover::before {
+    transform: translateY(0);
+}
+
+/* CONTACT ME */
+.contact h3 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    
+}
+.contact .main-title{
+    text-align: center;
+    padding: 40px;
+}
+
+.contact .main-title h3:after {
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(./material/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.details{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+
+.details .content{
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .content .fa{
+    background-color:var(--icon-color) ;
+    font-size: 24px;
+    border: 1px solid var(--icon-color);
+    border-radius: 100%;
+    margin-top:30px;
+    padding: 20px;
+
+} 
+.contact .content:hover .fa,
+.contact .content:focus .fa
+{
+    background-color:var(--dark-color);
+    color:var(--icon-color);
+    transition-duration: 0.5s;
+
+} 
+.contact .content h6{
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.contact .content p{
+    font-size: 16px;
+    padding: 25px;
+}
+
+/* FORM */
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 100px;
+}
+input{
+    width: 100%;
+    height: 25px;
+    padding: 20px;
+    margin-left:25px ;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--icon-color);
+}
+.msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 100px;
+}
+textarea{
+    width: 100%;
+    padding: 20px;
+    margin-left:25px ;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--icon-color);
+}
+
+.contact .buttons{
+    margin: 25px 0;
+}
+
+.contact .buttons .btn1{
+    width:120px;
+    height: 30px;
+    margin-left: 125px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid var(--dark-color);
+    color: white;
+    background-color: var(--dark-color);
+    
+    
+    }
+.contact  .buttons .btn1:hover,
+.contact  .buttons .btn1:focus{
+        background-color: white;
+        color: black;
+        border: 1px solid var(--dark-color);
+        /* transition-duration: 0.5s; */
+    
+    }
+
+
+/* COPYRIGHT */
+.copyright{
+    text-align: center;
+    background-color: var(--dark-color);
+    color: #6c757d;
+    font-size: 13px;
+    line-height: 1.6;
+}
